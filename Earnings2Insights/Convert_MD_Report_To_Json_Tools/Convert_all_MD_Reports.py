@@ -3,7 +3,8 @@ import os
 
 # File paths
 reports_dir = 'Earnings2Insights/Generated_Reports'
-json_file_path = 'Earnings2Insights/Earnings2Insights_Result_final.json'
+# reports_dir = 'Earnings2Insights/Generated_Reports/Mag7'
+json_file_path = 'Earnings2Insights/Earnings2Insights_Result_Mag7.json'
 
 # Function to extract ECC from filename
 def extract_ecc_from_filename(filename):

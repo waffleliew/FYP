@@ -536,7 +536,7 @@ def run_analysis(transcript, ticker=None, model="llama-3.3-70b-versatile", temp=
                 "   - After Writer's revision: Select Editor\n"
                 "   - After Editor's feedback: Select Writer for final revision\n"
                 "   - After Writer's final revision: Select Client\n"
-                "3. IMPORTANT: 1. DO NOT REPEAT AGENT SELECTION CONSECUTIVELY. 2. After Editor gives feedback, you MUST select Writer, not Client and not Analyst.\n\n"
+                "3. IMPORTANT: 1. DO NOT REPEAT AGENT SELECTION CONSECUTIVELY. 2. Client should only evaluate Writer's final revision.\n\n"
             
                 "Based on these rules and the conversation history, select the next role from {agentlist}. Only return the role name."
             )
@@ -618,9 +618,8 @@ def save_report(ticker, year, quarter, content):
     Returns:
         str: The path to the saved file
     """
-    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    filename = f"{ticker}_{year}_{quarter}.md"
-    filepath = Path('Earnings2Insights_Result/Generated_Reports') / filename
+    filename = f"{ticker}_{quarter}_{year}.md"
+    filepath = Path('Earnings2Insights/Generated_Reports') / filename
     
     with open(filepath, "w") as f:
         f.write(str(content))
