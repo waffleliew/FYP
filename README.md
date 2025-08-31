@@ -1,6 +1,6 @@
 # AI Automation Finance
 
-Welcome! This project features a multi-agent system for automated Financial Analysis built for the Earnings2Insights shared task at FinNLP @ EMNLP-2025. The competition challenges participants to automatically generate actionable investment reports from earnings call transcripts, evaluated by human annotators on their ability to guide Long/Short investment decisions for the next day, week, and month.
+Welcome! This project features a multi-agent system for automated Financial Analysis built for the Earnings2Insights shared task at FinNLP @ EMNLP-2025. The competition challenges participants to automatically generate actionable investment reports from earnings call transcripts, evaluated by human annotators on their ability to guide Long/Short investment decisions for the next day, week, and month. See publication [here](FinNLP-2025_paper_submission.pdf)
 
 ## Project Overview
 
